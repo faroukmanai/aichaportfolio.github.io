@@ -1,0 +1,87 @@
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 1;
+    height: 70vh;
+}
+header p{
+    margin:0;
+    text-transform: uppercase;
+}
+
+.first-name{
+    color:#faebd7;
+    
+}
+.last-name{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.job-name{
+    padding:20px 0;
+    font-size: 18px;
+    color:antiquewhite;
+}
+
+.last-name {
+	-webkit-text-stroke: 1px antiquewhite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: center center;
+    background-size: cover;
+	/* -webkit-transition: all 1s linear; */
+    animation: changeImg-1 10s linear infinite;
+}
+
+  @keyframes changeImg-1 {
+    0%, 100% { 
+      background-image: url('../assets/images/Basquiat 2.jpeg');
+    }
+    12% { 
+        background-image: url('../assets/images/Calder.jpeg');
+    }
+    25% { 
+        background-image: url('../assets/images/Party 2.jpeg');
+    }
+    35% { 
+        background-image: url('../assets/images/parallelles .jpeg');
+    }
+    50% { 
+        background-image: url('../assets/images/Revolution 2.jpg');
+    }
+    70% { 
+        background-image: url('../assets/images/Valentin Yudashkin.JPG');
+    }
+    90% { 
+        background-image: url('../assets/images/Western_30-10-17_nDF_1882.jpg');
+    }
+  }
+.job-name{
+    display:flex;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+.job-name a {
+    text-decoration: none;
+    color: #232b3f;
+    font-size: 12px;
+    padding:3px 5px;
+    background-color: antiquewhite;
+}
+
+@media (max-width: 480px) {
+    header{
+        font-size: 50px;
+        height: 30vh;
+    }
+    .job-name{
+        font-size:10px;
+    }
+
+}
